@@ -15,11 +15,13 @@
 #
 # * Basic Settings
 #
+# user = mysql
 user		= root
 # pid-file	= /var/run/mysqld/mysqld.pid
 # socket	= /var/run/mysqld/mysqld.sock
 
-port		= 3306
+# port = 443
+#port		= 3306
 
 datadir	= /var/lib/mysql
 # datadir	= /var/data/mysql
@@ -32,6 +34,7 @@ datadir	= /var/lib/mysql
 # Instead of skip-networking the default is now to listen only on
 # localhost which is more compatible and is not less secure.
 
+#bind-address            = 127.0.0.1
 bind-address		= 0.0.0.0
 
 mysqlx-bind-address	= 127.0.0.1
